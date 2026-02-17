@@ -1,11 +1,11 @@
 # demo-dotnet-benchmark
 
-| Method                                           |       Mean |     Error |    StdDev | Ratio | Rank |   Gen0 | Allocated | Alloc Ratio |
-| ------------------------------------------------ | ---------: | --------: | --------: | ----: | ---: | -----: | --------: | ----------: |
-| GetYearFromSpanWithFixedIndex                    |   2.511 ns | 0.0042 ns | 0.0038 ns | 0.010 |    1 |      - |         - |          NA |
-| GetYearFromSpanWithFixedIndexAndBinaryOperations |   2.573 ns | 0.0059 ns | 0.0052 ns | 0.010 |    2 |      - |         - |          NA |
-| GetYearFromSpanWithManualConversion              |   6.963 ns | 0.0078 ns | 0.0069 ns | 0.027 |    3 |      - |         - |          NA |
-| GetYearFromSpan                                  |  15.333 ns | 0.1837 ns | 0.1628 ns | 0.060 |    4 |      - |         - |          NA |
-| GetYearFromSubstring                             |  24.354 ns | 0.0670 ns | 0.0594 ns | 0.096 |    5 | 0.0153 |      32 B |          NA |
-| GetYearFromSplit                                 |  97.069 ns | 0.3601 ns | 0.3007 ns | 0.381 |    6 | 0.0764 |     160 B |          NA |
-| GetYearFromDateTime                              | 254.799 ns | 0.2873 ns | 0.2546 ns | 1.000 |    7 |      - |         - |          NA |
+| Method                                           |        Mean |     Error |    StdDev |      Median | Ratio | Rank |   Gen0 | Allocated | Alloc Ratio |
+| ------------------------------------------------ | ----------: | --------: | --------: | ----------: | ----: | ---: | -----: | --------: | ----------: |
+| GetYearFromSpanWithFixedIndexAndBinaryOperations |   0.0004 ns | 0.0008 ns | 0.0007 ns |   0.0001 ns | 0.000 |    1 |      - |         - |          NA |
+| GetYearFromSpanWithFixedIndex                    |   1.4564 ns | 0.0026 ns | 0.0020 ns |   1.4559 ns | 0.007 |    2 |      - |         - |          NA |
+| GetYearFromSpanWithManualConversion              |   4.5723 ns | 0.0046 ns | 0.0038 ns |   4.5737 ns | 0.021 |    3 |      - |         - |          NA |
+| GetYearFromSpan                                  |  18.7580 ns | 0.0393 ns | 0.0328 ns |  18.7461 ns | 0.085 |    4 |      - |         - |          NA |
+| GetYearFromSubstring                             |  27.7071 ns | 0.0669 ns | 0.0593 ns |  27.7075 ns | 0.126 |    5 | 0.0153 |      32 B |          NA |
+| GetYearFromSplit                                 |  85.3118 ns | 0.3543 ns | 0.2766 ns |  85.2788 ns | 0.389 |    6 | 0.0764 |     160 B |          NA |
+| GetYearFromDateTime                              | 219.5645 ns | 0.3783 ns | 0.2953 ns | 219.4568 ns | 1.000 |    7 |      - |         - |          NA |
